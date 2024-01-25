@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="New Item"
+                android:textColor="#050505"
+                android:textSize="50sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_list_from_new_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="≡"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/profile_from_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="🅿️"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_item_name"
+                android:hint="Item Name"
+                android:textColor="#050505"
+                android:textColorHint="#7A7878"
+                android:textSize="30sp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload_image_button"
+                android:text="Upload Image"/>
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:id="@+id/new_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Item Description"
+                android:textColor="#050505"
+                android:textColorHint="#7A7878"
+                android:textSize="20sp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_new_item_button"
+                android:text="Post"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
